@@ -54,10 +54,16 @@
       border-radius: 8px;
     }
     .map {
-      width: 100%;
-      height: 300px;
-      margin-top: 20px;
-    }
+  width: 100%;
+  height: 50vh; /* PC에서 높이 */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .map {
+    height: 60vh; /* 모바일에서 높이 */
+  }
+}
     footer {
       text-align: center;
       padding: 20px;
@@ -96,16 +102,15 @@
     </div>
 
     <div class="map">
-      <!-- 카카오맵 iframe -->
-      <iframe
-        src="https://map.kakao.com/link/map/거창국밥,35.690302220087,127.91919507793"
-        width="100%"
-        height="100%"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
-    </div>
+  <iframe
+    src="https://map.kakao.com/link/map/거창국밥,35.690302220087,127.91919507793"
+    width="100%"
+    height="100%"
+    style="border:0;"
+    allowfullscreen=""
+    loading="lazy">
+  </iframe>
+</div>
   </section>
 
   <footer>
